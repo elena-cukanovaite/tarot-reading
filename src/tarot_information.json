@@ -1,89 +1,111 @@
 {
   "M0": {
+    "name": "The Fool",
     "upright": { "money": "a", "love": "b" },
     "reverse": { "money": "c", "love": "d" }
   },
   "M1": {
+    "name": "The Magician",
     "upright": { "money": "a", "love": "b" },
     "reverse": { "money": "c", "love": "d" }
   },
   "M2": {
+    "name": "The High Priestess",
     "upright": { "money": "a", "love": "b" },
     "reverse": { "money": "c", "love": "d" }
   },
   "M3": {
+    "name": "The High Empress",
     "upright": { "money": "a", "love": "b" },
     "reverse": { "money": "c", "love": "d" }
   },
   "M4": {
+    "name": "The Emperor",
     "upright": { "money": "a", "love": "b" },
     "reverse": { "money": "c", "love": "d" }
   },
   "M5": {
+    "name": "The Hierophant",
     "upright": { "money": "a", "love": "b" },
     "reverse": { "money": "c", "love": "d" }
   },
   "M6": {
+    "name": "The Lovers",
     "upright": { "money": "a", "love": "b" },
     "reverse": { "money": "c", "love": "d" }
   },
   "M7": {
+    "name": "The Chariot",
     "upright": { "money": "a", "love": "b" },
     "reverse": { "money": "c", "love": "d" }
   },
   "M8": {
+    "name": "Strength",
     "upright": { "money": "a", "love": "b" },
     "reverse": { "money": "c", "love": "d" }
   },
   "M9": {
+    "name": "The Hermit",
     "upright": { "money": "a", "love": "b" },
     "reverse": { "money": "c", "love": "d" }
   },
   "M10": {
+    "name": "Wheel of Fortune",
     "upright": { "money": "a", "love": "b" },
     "reverse": { "money": "c", "love": "d" }
   },
   "M11": {
+    "name": "Justice",
     "upright": { "money": "a", "love": "b" },
     "reverse": { "money": "c", "love": "d" }
   },
   "M12": {
+    "name": "Justice",
     "upright": { "money": "a", "love": "b" },
     "reverse": { "money": "c", "love": "d" }
   },
   "M13": {
+    "name": "The Hanged Man",
     "upright": { "money": "a", "love": "b" },
     "reverse": { "money": "c", "love": "d" }
   },
   "M14": {
+    "name": "Death",
     "upright": { "money": "a", "love": "b" },
     "reverse": { "money": "c", "love": "d" }
   },
   "M15": {
+    "name": "Death",
     "upright": { "money": "a", "love": "b" },
     "reverse": { "money": "c", "love": "d" }
   },
   "M16": {
+    "name": "The Tower",
     "upright": { "money": "a", "love": "b" },
     "reverse": { "money": "c", "love": "d" }
   },
   "M17": {
+    "name": "The Star",
     "upright": { "money": "a", "love": "b" },
     "reverse": { "money": "c", "love": "d" }
   },
   "M18": {
+    "name": "The Moon",
     "upright": { "money": "a", "love": "b" },
     "reverse": { "money": "c", "love": "d" }
   },
   "M19": {
+    "name": "The Sun",
     "upright": { "money": "a", "love": "b" },
     "reverse": { "money": "c", "love": "d" }
   },
   "M20": {
+    "name": "Judgement",
     "upright": { "money": "a", "love": "b" },
     "reverse": { "money": "c", "love": "d" }
   },
   "M21": {
+    "name": "The World",
     "upright": { "money": "a", "love": "b" },
     "reverse": { "money": "c", "love": "d" }
   }
