@@ -15,7 +15,7 @@
     "reverse": { "money": "c", "love": "d" }
   },
   "M3": {
-    "name": "The High Empress",
+    "name": "The Empress",
     "upright": { "money": "a", "love": "b" },
     "reverse": { "money": "c", "love": "d" }
   },
@@ -60,22 +60,22 @@
     "reverse": { "money": "c", "love": "d" }
   },
   "M12": {
-    "name": "Justice",
-    "upright": { "money": "a", "love": "b" },
-    "reverse": { "money": "c", "love": "d" }
-  },
-  "M13": {
     "name": "The Hanged Man",
     "upright": { "money": "a", "love": "b" },
     "reverse": { "money": "c", "love": "d" }
   },
-  "M14": {
+  "M13": {
     "name": "Death",
     "upright": { "money": "a", "love": "b" },
     "reverse": { "money": "c", "love": "d" }
   },
+  "M14": {
+    "name": "Temperance",
+    "upright": { "money": "a", "love": "b" },
+    "reverse": { "money": "c", "love": "d" }
+  },
   "M15": {
-    "name": "Death",
+    "name": "The Devil",
     "upright": { "money": "a", "love": "b" },
     "reverse": { "money": "c", "love": "d" }
   },
