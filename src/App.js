@@ -2,20 +2,49 @@ import logo from './logo.svg';
 import './App.css';
 import cardData from './tarot_information.json';
 import React, {useState, useEffect} from 'react';
+import Card from '@mui/material/Card';
+import CardContent from '@mui/material/CardContent';
+import CardMedia from '@mui/material/CardMedia';
+import Typography from '@mui/material/Typography';
+import CardActionArea from '@mui/material/CardActionArea';
 
 let cardIds = Object.keys(cardData);
 let imageAngles = [{transform:"rotate(0deg)"}, {transform:"rotate(180deg)"}];
 let nameSuffix = ["", " reversed"];
 let theAnswerUprightOrReversed = ["upright", "reverse"];
 
+const ActionAreaCard = ({imagePathInput, cardNameInput, cardDescriptionInput, reversedInput}) => {
+  console.log(imagePathInput)
+  return (
+    <Card sx={{ maxWidth: 345 }}>
+      <CardActionArea>
+        <CardMedia
+          component="img"
+          width="300"
+          image={imagePathInput}
+          sx={reversedInput}
+        />
+        <CardContent>
+          <Typography gutterBottom variant="h5" component="div">
+            {cardNameInput}
+          </Typography>
+          <Typography variant="body2" sx={{ color: 'text.secondary' }}>
+            {cardDescriptionInput}
+          </Typography>
+        </CardContent>
+      </CardActionArea>
+    </Card>
+  );
+}
+
 function App() {
   let imagesPath = "./tarot_images/"
   let imagesFileType = ".jpg"
-  const [card, setCard] = useState("M0");
-  const [imagePath, setImagePath] = useState(imagesPath+card+imagesFileType);
+  const [card, setCard] = useState("");
+  const [imagePath, setImagePath] = useState(imagesPath+"back_of_card"+imagesFileType);
   const [reversed, setReversed] = useState({transform:"rotate(0deg)"});
-  const [cardName, setCardName] = useState("The Fool");
-  const [theAnswer, setTheAnswer] = useState("");
+  const [cardName, setCardName] = useState("");
+  const [theAnswer, setTheAnswer] = useState("Think of a question. When you are ready, click the button to get your reading.");
 
   const selectCard = () => {
     let item = cardIds[Math.floor(Math.random()*cardIds.length)];
@@ -36,10 +65,16 @@ function App() {
       <center>
       <button onClick={selectCard}>Generate My Reading</button>
       <br></br>
+      {/* <br></br>
       <h1>{cardName}</h1>
       <img src={imagePath} style={reversed}/>
-      <p>{theAnswer}</p>
+      <p>{theAnswer}</p> */}
+
+      <ActionAreaCard imagePathInput = {imagePath} cardNameInput = {cardName} 
+      cardDescriptionInput = {theAnswer}
+      reversedInput = {reversed}/>
       </center>
+      
     </>
   );
 }
