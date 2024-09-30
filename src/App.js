@@ -7,14 +7,16 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import CardActionArea from '@mui/material/CardActionArea';
+import { useTheme } from '@mui/material/styles';
+import Button from '@mui/material/Button';
 
 let cardIds = Object.keys(cardData);
 let imageAngles = [{transform:"rotate(0deg)"}, {transform:"rotate(180deg)"}];
 let nameSuffix = ["", " reversed"];
 let theAnswerUprightOrReversed = ["upright", "reverse"];
 
-const ActionAreaCard = ({imagePathInput, cardNameInput, cardDescriptionInput, reversedInput}) => {
-  console.log(imagePathInput)
+const ActionAreaCard = ({imagePathInput, cardNameInput, cardDescriptionInput, reversedInput, functionInput}) => {
+  const theme = useTheme();
   return (
     <Card sx={{ maxWidth: 345 }}>
       <CardActionArea>
@@ -33,6 +35,7 @@ const ActionAreaCard = ({imagePathInput, cardNameInput, cardDescriptionInput, re
           </Typography>
         </CardContent>
       </CardActionArea>
+      <Button onClick={functionInput}> I am ready for the answer</Button>
     </Card>
   );
 }
@@ -63,16 +66,17 @@ function App() {
   return (
     <>
       <center>
-      <button onClick={selectCard}>Generate My Reading</button>
-      <br></br>
+      {/* <button onClick={selectCard}>Generate My Reading</button>
+      <br></br> */}
       {/* <br></br>
       <h1>{cardName}</h1>
       <img src={imagePath} style={reversed}/>
       <p>{theAnswer}</p> */}
-
+      <br></br>
       <ActionAreaCard imagePathInput = {imagePath} cardNameInput = {cardName} 
       cardDescriptionInput = {theAnswer}
-      reversedInput = {reversed}/>
+      reversedInput = {reversed}
+      functionInput={selectCard}/>
       </center>
       
     </>
