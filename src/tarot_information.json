@@ -1,112 +1,152 @@
 {
   "M0": {
     "name": "The Fool",
-    "upright": { "money": "a", "love": "b" },
-    "reverse": { "money": "c", "love": "d" }
+    "upright": {
+      "general": "You may feel out of step with the world, yearning to follow your own path. This sense of isolation can be overwhelming, as your emotions seem misaligned with those around you. Trust your instincts—they are your true guide."
+    },
+    "reverse": {
+      "general": "This is not an ideal time for independence, and you may be unaware of the realities around you. It's important to seriously consider what lies ahead."
+    }
   },
   "M1": {
     "name": "The Magician",
-    "upright": { "money": "a", "love": "b" },
-    "reverse": { "money": "c", "love": "d" }
+    "upright": {
+      "general": "New beginnings and opportunities are on the horizon, offering you the chance to lead and achieve your ambitions. You possess all the tools and knowledge needed to succeed—now, it’s simply a matter of taking action."
+    },
+    "reverse": {
+      "general": "Now is not the time for change. While change is on the way, patience is key—wait for the right moment."
+    }
   },
   "M2": {
     "name": "The High Priestess",
-    "upright": { "money": "a", "love": "b" },
-    "reverse": { "money": "c", "love": "d" }
+    "upright": {
+      "general": "You are deeply connected to your inner voice and your own spirituality. Inner transformation must occur before it can manifest in the outside world. Embrace this newfound clarity and let it guide you forward."
+    },
+    "reverse": {
+      "general": "You seek recognition, and may have been neglecting your own needs. Others might sense that you've been withdrawing or seem different, and that's perfectly okay. You're exploring your inner world and discovering the depth it holds."
+    }
   },
   "M3": {
     "name": "The Empress",
-    "upright": { "money": "a", "love": "b" },
-    "reverse": { "money": "c", "love": "d" }
+    "upright": {
+      "general": "You’ve been offering support to those in need, drawing on your strength to do so. Continue on this path, as your resilience and kindness are making a difference."
+    },
+    "reverse": {
+      "general": "You may have been dedicating so much time to helping others that it's time to focus on caring for yourself."
+    }
   },
   "M4": {
     "name": "The Emperor",
-    "upright": { "money": "a", "love": "b" },
-    "reverse": { "money": "c", "love": "d" }
+    "upright": {
+      "general": "You are connected with someone who embodies authority or represents a powerful group, bringing a positive influence into your life."
+    },
+    "reverse": {
+      "general": "You find yourself at odds with the established order, feeling the weight of responsibilities that no longer resonate with you."
+    }
   },
   "M5": {
     "name": "The Hierophant",
-    "upright": { "money": "a", "love": "b" },
-    "reverse": { "money": "c", "love": "d" }
+    "upright": {
+      "general": "An authoritative presence guides your life, and you feel a sense of loyalty toward it. You may aspire to become a leader yourself or find yourself connected to one. This leadership entails making important judgments."
+    },
+    "reverse": {
+      "general": "Old traditions may feel suffocating, and you might be inclined to challenge them. You choose to embrace your own philosophy, even if it places you at odds with the established norms."
+    }
   },
   "M6": {
     "name": "The Lovers",
-    "upright": { "money": "a", "love": "b" },
-    "reverse": { "money": "c", "love": "d" }
+    "upright": {
+      "general": "A decision may be necessary, but you will make the right choice. Cooperation is underway, and a shared goal will be accomplished."
+    },
+    "reverse": {
+      "general": "You may be experiencing a delay in your life, possibly stemming from efforts to force cooperation among elements that are incompatible."
+    }
   },
   "M7": {
     "name": "The Chariot",
-    "upright": { "money": "a", "love": "b" },
-    "reverse": { "money": "c", "love": "d" }
+    "upright": {
+      "general": "Victory is certain, and things are progressing swiftly. You will achieve everything you set your mind to."
+    },
+    "reverse": {
+      "general": "With everything moving so quickly, you may feel overwhelmed and struggle to keep pace. You’re being pulled in multiple directions, so it’s important to take time to reflect on which path to pursue."
+    }
   },
   "M8": {
     "name": "Strength",
-    "upright": { "money": "a", "love": "b" },
-    "reverse": { "money": "c", "love": "d" }
+    "upright": {
+      "general": "You have overcome challenges through the inner strength you have discovered. Your instincts guide your every action, making it essential to trust and follow them wholeheartedly."
+    },
+    "reverse": {
+      "general": "You find yourself in a challenging situation and are struggling to navigate it. Focus on your own needs and trust your instincts rather than the opinions of others."
+    }
   },
   "M9": {
     "name": "The Hermit",
-    "upright": { "money": "a", "love": "b" },
-    "reverse": { "money": "c", "love": "d" }
+    "upright": {
+      "general": "Someone in your life is eager for you to reach out. Seek their guidance and don’t isolate yourself."
+    },
+    "reverse": {
+      "general": "You have been overlooking important issues in your life. It’s time for self-reflection, and a period of withdrawal may be necessary."
+    }
   },
   "M10": {
     "name": "Wheel of Fortune",
-    "upright": { "money": "a", "love": "b" },
-    "reverse": { "money": "c", "love": "d" }
+    "upright": { "general": "You have made a significant change in your life, whether it’s leaving a job or ending a relationship. Now, the best course of action is to go with the flow. While there may be some unexpected twists along the way, everything will ultimately turn out well." },
+    "reverse": { "general": "You are holding yourself back by resisting a necessary change in your life. Fear of the unknown is hindering your progress. Instead of daydreaming about what you want to achieve, take action. Trust the guidance offered by the universe—you already know what you need to do." }
   },
   "M11": {
     "name": "Justice",
-    "upright": { "money": "a", "love": "b" },
-    "reverse": { "money": "c", "love": "d" }
+    "upright": { "general": "You are faced with a situation that requires a fair and balanced solution. It's important to create harmony, and your sound judgment, free from bias, will guide you in doing so." },
+    "reverse": { "general": "An unfair situation may arise, and to navigate it, you must rely less on external influences and strengthen your independence." }
   },
   "M12": {
     "name": "The Hanged Man",
-    "upright": { "money": "a", "love": "b" },
-    "reverse": { "money": "c", "love": "d" }
+    "upright": { "general": "A new path lies ahead, inviting you to see things from a fresh perspective. This is a time for reassessment and adjustment. Take your time to make the right choice." },
+    "reverse": { "general": "You find yourself at a crossroads, feeling stuck due to neglecting your inner self and putting aside your own needs. It's time to break this pattern and commit to a higher purpose." }
   },
   "M13": {
     "name": "Death",
-    "upright": { "money": "a", "love": "b" },
-    "reverse": { "money": "c", "love": "d" }
+    "upright": { "general": "A positive transformation is on the horizon. To embrace the new, you must first let go of the old ways." },
+    "reverse": { "general": "It's time to let go of fear and make the decisions you've been avoiding. You're holding yourself back, stuck in a situation you know needs to change. Though you're unhappy, hesitation keeps you trapped. To move forward, you must confront your dissatisfaction and embrace the opportunity for renewal." }
   },
   "M14": {
     "name": "Temperance",
-    "upright": { "money": "a", "love": "b" },
-    "reverse": { "money": "c", "love": "d" }
+    "upright": { "general": "You need to harmonize the various aspects of your life. Your inner growth will support you in this effort." },
+    "reverse": { "general": "Progress has slowed, but there's little you can do except allow things to unfold naturally. Patience is essential, as forcing the situation will only lead to frustration." }
   },
   "M15": {
     "name": "The Devil",
-    "upright": { "money": "a", "love": "b" },
-    "reverse": { "money": "c", "love": "d" }
+    "upright": { "general": "You are your own barrier, yet within you lies the strength to break free from this situation." },
+    "reverse": { "general": "You are contributing to the situation that makes you feel trapped. However, if you’re willing to put in the hard work, you can set yourself free." }
   },
   "M16": {
     "name": "The Tower",
-    "upright": { "money": "a", "love": "b" },
-    "reverse": { "money": "c", "love": "d" }
+    "upright": { "general": "You need to challenge outdated beliefs and break free from old habits. While there may be a loss in your life, it could have been prevented had you been willing to confront the truth. Regardless, whatever has come to an end has fulfilled its purpose and needed to be released." },
+    "reverse": { "general": "You are holding onto old habits, which is creating challenges in your life. While you may feel lost, you are being prepared for the necessary changes ahead. Once you release these old habits, you will discover a newfound sense of freedom." }
   },
   "M17": {
     "name": "The Star",
-    "upright": { "money": "a", "love": "b" },
-    "reverse": { "money": "c", "love": "d" }
+    "upright": { "general": "You are in a positive phase of your life, receiving support from both material and spiritual realms. Wonderful things are on the horizon." },
+    "reverse": { "general": "You are retreating into your inner world, perhaps in response to a recent disappointment. This is a vital healing phase, and it's important to take the time to rest and rejuvenate." }
   },
   "M18": {
     "name": "The Moon",
-    "upright": { "money": "a", "love": "b" },
-    "reverse": { "money": "c", "love": "d" }
+    "upright": { "general": "You are growing more aware of your inner self and deepening your connection to the spiritual realm. You may possess intuitive abilities, so be attentive to your instincts and dreams." },
+    "reverse": { "general": "Your soul is calling for your attention, as you've been neglecting your needs. It's essential to take time to reconnect with your inner self; the outside world has disrupted your balance. Embrace this moment to rest and reflect." }
   },
   "M19": {
     "name": "The Sun",
-    "upright": { "money": "a", "love": "b" },
-    "reverse": { "money": "c", "love": "d" }
+    "upright": { "general": "New beginnings are on the horizon, and everything is progressing positively in your life." },
+    "reverse": { "general": "New beginnings may experience delays. You might need to adjust your plans unexpectedly or put in additional effort." }
   },
   "M20": {
     "name": "Judgement",
-    "upright": { "money": "a", "love": "b" },
-    "reverse": { "money": "c", "love": "d" }
+    "upright": { "general": "You've received a wake-up call from the universe and are now prepared to embrace a new phase in your life. This transition is a natural outcome of your growth and maturity." },
+    "reverse": { "general": "You are being called to mature as you enter a new phase in your life. While you may feel uncertain about how to navigate this change, it's essential to find peace with it." }
   },
   "M21": {
     "name": "The World",
-    "upright": { "money": "a", "love": "b" },
-    "reverse": { "money": "c", "love": "d" }
+    "upright": { "general": "Success is guaranteed; everything you undertake now will thrive. This marks the end of an old cycle and the start of a new one. It is your time for ultimate victory. All possibilities are within your reach, and you are free to make your own choices." },
+    "reverse": { "general": "You have many choices before you, yet you may feel uncertain about which path to take. As you encounter new experiences, you might find yourself rejecting them out of fear or limited understanding. It's time to acknowledge that the universe is more intricate than you were previously willing to accept." }
   }
 }
