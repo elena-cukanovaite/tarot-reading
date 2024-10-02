@@ -1,84 +1,68 @@
-import logo from './logo.svg';
-import './App.css';
-import cardData from './tarot_information.json';
-import React, {useState, useEffect} from 'react';
-import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-import Typography from '@mui/material/Typography';
-import CardActionArea from '@mui/material/CardActionArea';
-import { useTheme } from '@mui/material/styles';
-import Button from '@mui/material/Button';
+import "./App.css";
+import cardData from "./tarot_information.json";
+import React, { useState } from "react";
+import ActionAreaCard from "./components/card";
+import Box from "@mui/material/Box";
+import Grid from "@mui/material/Grid2";
+import Button from "@mui/material/Button";
+import ButtonGroup from "@mui/material/ButtonGroup";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Link,
+  useNavigate,
+} from "react-router-dom";
+import ThreeCard from "./ThreeCard";
 
-let cardIds = Object.keys(cardData);
-let imageAngles = [{transform:"rotate(0deg)"}, {transform:"rotate(180deg)"}];
-let nameSuffix = ["", " reversed"];
-let theAnswerUprightOrReversed = ["upright", "reverse"];
-
-const ActionAreaCard = ({imagePathInput, cardNameInput, cardDescriptionInput, reversedInput, functionInput}) => {
-  const theme = useTheme();
-  return (
-    <Card sx={{ maxWidth: 345 }}>
-      <CardActionArea>
-        <CardMedia
-          component="img"
-          width="300"
-          image={imagePathInput}
-          sx={reversedInput}
-        />
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="div">
-            {cardNameInput}
-          </Typography>
-          <Typography variant="body2" sx={{ color: 'text.secondary' }}>
-            {cardDescriptionInput}
-          </Typography>
-        </CardContent>
-      </CardActionArea>
-      <Button onClick={functionInput}> I am ready for the answer</Button>
-    </Card>
-  );
-}
-
-function App() {
-  let imagesPath = "./tarot_images/"
-  let imagesFileType = ".jpg"
-  const [card, setCard] = useState("");
-  const [imagePath, setImagePath] = useState(imagesPath+"back_of_card"+imagesFileType);
-  const [reversed, setReversed] = useState({transform:"rotate(0deg)"});
-  const [cardName, setCardName] = useState("");
-  const [theAnswer, setTheAnswer] = useState("Think of a question. When you are ready, click the button to get your reading.");
-
-  const selectCard = () => {
-    let item = cardIds[Math.floor(Math.random()*cardIds.length)];
-    let reversedId = Math.floor(Math.random()*imageAngles.length);
-    let reversedOrNot = imageAngles[reversedId];
-    let selectedCardName = cardData[item].name;
-    let selectedAnswer = cardData[item][theAnswerUprightOrReversed[reversedId]]["general"];
-
-    setCard(item);
-    setCardName(selectedCardName + nameSuffix[reversedId]);
-    setImagePath(imagesPath+item+imagesFileType);
-    setReversed(reversedOrNot);
-    setTheAnswer(selectedAnswer);
-  }
+function OneCard() {
 
   return (
     <>
       <center>
-      {/* <button onClick={selectCard}>Generate My Reading</button>
-      <br></br> */}
-      {/* <br></br>
-      <h1>{cardName}</h1>
-      <img src={imagePath} style={reversed}/>
-      <p>{theAnswer}</p> */}
-      <br></br>
-      <ActionAreaCard imagePathInput = {imagePath} cardNameInput = {cardName} 
-      cardDescriptionInput = {theAnswer}
-      reversedInput = {reversed}
-      functionInput={selectCard}/>
+        <Box sx={{ flexGrow: 1 }}>
+          <Grid item container spacing={2} justifyContent="center">
+            <Grid item>
+              <ActionAreaCard
+              />
+            </Grid>
+          </Grid>
+        </Box>
+        <br></br>
       </center>
-      
+    </>
+  );
+}
+
+const buttons = [
+  <Button key="one" component={Link} to="/">
+    One Card Reading
+  </Button>, // Use Link for navigation
+  <Button key="three" component={Link} to="/threecard">
+    Three Card Reading
+  </Button>, // Use Link for navigation
+  // <Button key="celtic">Celtic Cross Reading</Button>,  // No Link, so it remains a normal button
+];
+
+function App() {
+  return (
+    <>
+      <Router>
+        <div>
+          <center>
+            <nav>
+              <ButtonGroup aria-label="Vertical button group">
+                {buttons}
+              </ButtonGroup>
+            </nav>
+          </center>
+
+          <Routes>
+            <Route path="/" element={<OneCard />} />
+            <Route path="/threecard" element={<ThreeCard />} />
+          </Routes>
+        </div>
+      </Router>
     </>
   );
 }
