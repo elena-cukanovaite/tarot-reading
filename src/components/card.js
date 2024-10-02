@@ -16,7 +16,8 @@ let imageAngles = [
 let nameSuffix = ["", " reversed"];
 let theAnswerUprightOrReversed = ["upright", "reverse"];
 
-const ActionAreaCard = () => {
+const ActionAreaCard = ({placeholderDescription}) => {
+    console.log(placeholderDescription);
     const theme = useTheme();
     let imagesPath = "./tarot_images/";
     let imagesFileType = ".jpg";
@@ -25,9 +26,7 @@ const ActionAreaCard = () => {
     );
     const [reversed, setReversed] = useState({ transform: "rotate(0deg)" });
     const [cardName, setCardName] = useState("");
-    const [theAnswer, setTheAnswer] = useState(
-      "Think of a question. When you are ready, click the button to get your reading."
-    );
+    const [theAnswer, setTheAnswer] = useState(placeholderDescription);
 
     const selectCard = () => {
       let item = cardIds[Math.floor(Math.random() * cardIds.length)];

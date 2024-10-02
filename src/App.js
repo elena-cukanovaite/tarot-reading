@@ -1,6 +1,5 @@
 import "./App.css";
-import cardData from "./tarot_information.json";
-import React, { useState } from "react";
+import React from "react";
 import ActionAreaCard from "./components/card";
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid2";
@@ -10,20 +9,18 @@ import {
   BrowserRouter as Router,
   Routes,
   Route,
-  Link,
-  useNavigate,
+  Link
 } from "react-router-dom";
 import ThreeCard from "./ThreeCard";
 
 function OneCard() {
-
   return (
     <>
       <center>
         <Box sx={{ flexGrow: 1 }}>
           <Grid item container spacing={2} justifyContent="center">
             <Grid item>
-              <ActionAreaCard
+              <ActionAreaCard placeholderDescription={"Think of a question. When you are ready, click the button to get your reading."}
               />
             </Grid>
           </Grid>
