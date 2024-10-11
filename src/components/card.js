@@ -16,15 +16,16 @@ let imageAngles = [
 let nameSuffix = ["", " reversed"];
 let theAnswerUprightOrReversed = ["upright", "reverse"];
 
-const ActionAreaCard = ({placeholderDescription}) => {
+const ActionAreaCard = ({placeholderDescription, widthInput = 300, rotateCardComponent = 0}) => {
     console.log(placeholderDescription);
     const theme = useTheme();
     let imagesPath = "./tarot_images/";
     let imagesFileType = ".jpg";
+    //let rotateCardComponentString = 'rotate('+String(rotateCardComponent)+'deg)';
     const [imagePath, setImagePath] = useState(
       imagesPath + "back_of_card" + imagesFileType
     );
-    const [reversed, setReversed] = useState({ transform: "rotate(0deg)" });
+    const [reversed, setReversed] = useState({ transform: "rotate(0deg)", width: widthInput});
     const [cardName, setCardName] = useState("");
     const [theAnswer, setTheAnswer] = useState(placeholderDescription);
 
@@ -43,11 +44,11 @@ const ActionAreaCard = ({placeholderDescription}) => {
     };
 
     return (
-      <Card sx={{ maxWidth: 345 }}>
+      <Card sx={{ maxWidth: widthInput}}> {/* , transform: rotateCardComponentString}}> */}
         <CardActionArea>
           <CardMedia
             component="img"
-            width="300"
+            imageWidth={300}
             image={imagePath}
             sx={reversed}
           />

@@ -5,13 +5,9 @@ import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid2";
 import Button from "@mui/material/Button";
 import ButtonGroup from "@mui/material/ButtonGroup";
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  Link
-} from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import ThreeCard from "./ThreeCard";
+import CelticCross from "./CelticCross";
 
 function OneCard() {
   return (
@@ -20,7 +16,10 @@ function OneCard() {
         <Box sx={{ flexGrow: 1 }}>
           <Grid item container spacing={2} justifyContent="center">
             <Grid item>
-              <ActionAreaCard placeholderDescription={"Think of a question. When you are ready, click the button to get your reading."}
+              <ActionAreaCard
+                placeholderDescription={
+                  "Think of a question. When you are ready, click the button to get your reading."
+                }
               />
             </Grid>
           </Grid>
@@ -34,11 +33,13 @@ function OneCard() {
 const buttons = [
   <Button key="one" component={Link} to="/">
     One Card Reading
-  </Button>, // Use Link for navigation
+  </Button>,
   <Button key="three" component={Link} to="/threecard">
     Three Card Reading
-  </Button>, // Use Link for navigation
-  // <Button key="celtic">Celtic Cross Reading</Button>,  // No Link, so it remains a normal button
+  </Button>,
+  <Button key="celtic" component={Link} to="/celticcross">
+    Celtic Cross Reading
+  </Button>,
 ];
 
 function App() {
@@ -57,6 +58,7 @@ function App() {
           <Routes>
             <Route path="/" element={<OneCard />} />
             <Route path="/threecard" element={<ThreeCard />} />
+            <Route path="/celticcross" element={<CelticCross />} />
           </Routes>
         </div>
       </Router>
