@@ -28,7 +28,7 @@ const CelticCross = () => {
         <br></br>
 
         <Box sx={{ width: "100%" }}>
-          <Grid item container spacing={2} justifyContent="center" >
+          <Grid item container spacing={2} justifyContent="center">
             <Grid
               item
               container
@@ -41,9 +41,7 @@ const CelticCross = () => {
                   5
                 </Typography>
                 <ActionAreaCard
-                  placeholderDescription="This card represents the past. 
-              Click the button once you are ready to find out how the past is affecting 
-              the situation you are questioning."
+                  placeholderDescription=""
                   widthInput={widthInput}
                 />
               </Grid>
@@ -54,65 +52,54 @@ const CelticCross = () => {
                 spacing={2}
                 direction="row"
                 justifyContent="left"
-      alignItems="center" 
+                alignItems="center"
               >
                 <Grid item>
                   <Typography variant="h4" gutterBottom>
                     3
                   </Typography>
                   <ActionAreaCard
-                    placeholderDescription="This card represents the past. 
-              Click the button once you are ready to find out how the past is affecting 
-              the situation you are questioning."
+                    placeholderDescription=""
                     widthInput={widthInput}
                   />
                 </Grid>
 
                 <Grid
-              item
-              container
-              spacing={2}
-              direction="column"
-              justifyContent="left"
-              display= 'flex'
-            >
-                <Grid item>
-                  <Typography variant="h4" gutterBottom>
-                    1
-                  </Typography>
-                  <ActionAreaCard
-                    placeholderDescription="This card represents the past. 
-              Click the button once you are ready to find out how the past is affecting 
-              the situation you are questioning."
-                    widthInput={widthInput}
-                  />
+                  item
+                  container
+                  spacing={2}
+                  direction="column"
+                  justifyContent="left"
+                  display="flex"
+                >
+                  <Grid item>
+                    <Typography variant="h4" gutterBottom>
+                      1
+                    </Typography>
+                    <ActionAreaCard
+                      placeholderDescription=""
+                      widthInput={widthInput}
+                    />
+                  </Grid>
+
+                  <Grid item>
+                    <Typography variant="h4" gutterBottom>
+                      2
+                    </Typography>
+                    <ActionAreaCard
+                      placeholderDescription=""
+                      widthInput={widthInput}
+                      //rotateCardComponent={90}
+                    />
+                  </Grid>
                 </Grid>
-
-                <Grid item>
-                  <Typography variant="h4" gutterBottom>
-                    2
-                  </Typography>
-                  <ActionAreaCard
-                    placeholderDescription="This card represents the past. 
-              Click the button once you are ready to find out how the past is affecting 
-              the situation you are questioning."
-                    widthInput={widthInput}
-                    //rotateCardComponent={90}
-                  />
-                </Grid>
-
-                </Grid>
-
-
 
                 <Grid item>
                   <Typography variant="h4" gutterBottom>
                     6
                   </Typography>
                   <ActionAreaCard
-                    placeholderDescription="This card represents the past. 
-              Click the button once you are ready to find out how the past is affecting 
-              the situation you are questioning."
+                    placeholderDescription=""
                     widthInput={widthInput}
                   />
                 </Grid>
@@ -122,9 +109,7 @@ const CelticCross = () => {
                   4
                 </Typography>
                 <ActionAreaCard
-                  placeholderDescription="This card represents the past. 
-              Click the button once you are ready to find out how the past is affecting 
-              the situation you are questioning."
+                  placeholderDescription=""
                   widthInput={widthInput}
                 />
               </Grid>
@@ -142,9 +127,7 @@ const CelticCross = () => {
                   10
                 </Typography>
                 <ActionAreaCard
-                  placeholderDescription="This card represents the past. 
-              Click the button once you are ready to find out how the past is affecting 
-              the situation you are questioning."
+                  placeholderDescription=""
                   widthInput={widthInput}
                 />
               </Grid>
@@ -154,9 +137,7 @@ const CelticCross = () => {
                   9
                 </Typography>
                 <ActionAreaCard
-                  placeholderDescription="This card represents the past. 
-              Click the button once you are ready to find out how the past is affecting 
-              the situation you are questioning."
+                  placeholderDescription=""
                   widthInput={widthInput}
                 />
               </Grid>
@@ -166,9 +147,7 @@ const CelticCross = () => {
                   8
                 </Typography>
                 <ActionAreaCard
-                  placeholderDescription="This card represents the past. 
-              Click the button once you are ready to find out how the past is affecting 
-              the situation you are questioning."
+                  placeholderDescription=""
                   widthInput={widthInput}
                 />
               </Grid>
@@ -178,9 +157,7 @@ const CelticCross = () => {
                   7
                 </Typography>
                 <ActionAreaCard
-                  placeholderDescription="This card represents the past. 
-              Click the button once you are ready to find out how the past is affecting 
-              the situation you are questioning."
+                  placeholderDescription=""
                   widthInput={widthInput}
                 />
               </Grid>
