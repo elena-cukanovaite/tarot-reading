@@ -5,8 +5,6 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import CardActionArea from "@mui/material/CardActionArea";
-import { useTheme } from "@mui/material/styles";
-import Button from "@mui/material/Button";
 
 let cardIds = Object.keys(cardData);
 let imageAngles = [
@@ -18,14 +16,11 @@ let theAnswerUprightOrReversed = ["upright", "reverse"];
 
 const ActionAreaCard = ({
   placeholderDescription,
-  widthInput = 300,
-  rotateCardComponent = 0,
+  widthInput = "300px"
 }) => {
   console.log(placeholderDescription);
-  const theme = useTheme();
   let imagesPath = "./tarot_images/";
   let imagesFileType = ".jpg";
-  //let rotateCardComponentString = 'rotate('+String(rotateCardComponent)+'deg)';
   const [imagePath, setImagePath] = useState(
     imagesPath + "back_of_card" + imagesFileType
   );
@@ -35,11 +30,6 @@ const ActionAreaCard = ({
   });
   const [cardName, setCardName] = useState("");
   const [theAnswer, setTheAnswer] = useState(placeholderDescription);
-  const [showText, setShowText] = useState(false);
-
-  const handleToggle = () => {
-    setShowText(!showText);
-  };
 
   const selectCard = () => {
     let item = cardIds[Math.floor(Math.random() * cardIds.length)];
@@ -58,12 +48,7 @@ const ActionAreaCard = ({
   return (
     <Card onClick={selectCard} sx={{ maxWidth: widthInput }}>
       <CardActionArea>
-        <CardMedia
-          component="img"
-          image={imagePath}
-          sx={reversed}
-        />
-
+        <CardMedia component="img" image={imagePath} sx={reversed} />
         {
           <CardContent
             sx={{
@@ -73,9 +58,9 @@ const ActionAreaCard = ({
               height: "100%",
               width: "90%",
               backgroundColor: "rgba(0, 0, 0, 0.7)",
-              overflowY: 'auto',
+              overflowY: "auto",
               color: "white",
-              opacity: 0, 
+              opacity: 0,
               transition: "opacity 0.3s ease",
               "&:hover": {
                 opacity: 1,

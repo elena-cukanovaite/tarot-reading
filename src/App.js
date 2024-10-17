@@ -13,8 +13,8 @@ function OneCard() {
   return (
     <>
       <center>
-        <Box sx={{ flexGrow: 1 }}>
-          <Grid item container spacing={2} justifyContent="center">
+        <Box>
+          <Grid item container justifyContent="center">
             <Grid item>
               <ActionAreaCard
                 placeholderDescription={

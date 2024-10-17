@@ -9,7 +9,7 @@ const ThreeCard = () => {
   return (
     <>
       <center>
-        <Box sx={{ flexGrow: 1 }}>
+        <Box>
           <Grid container justifyContent="center">
             <Paper elevation={0}>
               <Typography gutterBottom variant="h2" component="div">
@@ -17,7 +17,6 @@ const ThreeCard = () => {
               </Typography>
               <Typography
                 variant="body2"
-                width="900px"
                 sx={{ color: "text.secondary" }}
               >
                 A Three-Card Tarot Spread is a simple yet powerful method for
@@ -44,8 +43,8 @@ const ThreeCard = () => {
           </Grid>
         </Box>
         <br></br>
-        <Box sx={{ flexGrow: 1 }}>
-          <Grid item container spacing={2} justifyContent="center">
+        <Box>
+          <Grid item container direction="row" spacing={2} justifyContent="center">
             <Grid item>
               <Typography variant="h4" gutterBottom>
                 The past
