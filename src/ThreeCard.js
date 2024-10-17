@@ -44,8 +44,12 @@ const ThreeCard = () => {
         </Box>
         <br></br>
         <Box>
-          <Grid item container direction="row" spacing={1} justifyContent="center">
-            <Grid item xs={4}>
+          <Grid item container direction="row" spacing={1} justifyContent="center"  alignItems="stretch" sx={{
+              flexWrap: "nowrap", // Prevents items from wrapping
+            }}>
+            <Grid item xs={4} sx={{
+                minWidth: "33.33vw", // Each card will take up 33.33% of the viewport width
+              }}>
               <Typography variant="h4" gutterBottom>
                 The past
               </Typography>
@@ -54,7 +58,9 @@ const ThreeCard = () => {
               the situation you are questioning." />
             </Grid>
 
-            <Grid item xs={4}>
+            <Grid item xs={4} sx={{
+                minWidth: "33.33vw", // Each card will take up 33.33% of the viewport width
+              }}>
               <Typography variant="h4" gutterBottom>
                 The present
               </Typography>
@@ -63,7 +69,9 @@ const ThreeCard = () => {
               the situation you are questioning." />
             </Grid>
 
-            <Grid item xs={4}>
+            <Grid item xs={4} sx={{
+                minWidth: "33.33vw", // Each card will take up 33.33% of the viewport width
+              }}>
               <Typography variant="h4" gutterBottom>
                 The future
               </Typography>
