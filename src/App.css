@@ -2,6 +2,7 @@
   background-color: #ffffff;
   background-image: url('../public/tarot_images/back_of_card.jpg'); /* Path to your image */
   background-repeat: repeat;
+  height: 100vh
 }
 /* 
 .custom-button{
