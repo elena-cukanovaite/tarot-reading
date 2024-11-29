@@ -50,36 +50,49 @@ const ActionAreaCard = ({
   };
 
   return (
-    <Card className='custom-card'
+    <Card
+      className="custom-card"
       onClick={selectCard}
       sx={{ maxWidth: widthInput, transform: componentRotation }}
     >
       <CardActionArea>
-        <Typography className='custom-card-title' gutterBottom variant="h5" component="div">
-          {cardName}
-        </Typography>
-        <Typography className='custom-card-answer' variant="body2" color="inherit">
-          {theAnswer}
-        </Typography>
-        <CardMedia className='custom-card-media' component="img" image={imagePath} sx={reversed} />
+        <CardMedia
+          className="custom-card-media"
+          component="img"
+          image={imagePath}
+          sx={reversed}
+        />
         {
-          <CardContent className="custom-card-content"
-          // sx={{
-          //   position: "absolute",
-          //   top: 0,
-          //   left: 0,
-          //   height: "100%",
-          //   width: "90%",
-          //   backgroundColor: "rgba(0, 0, 0, 0.7)",
-          //   overflowY: "auto",
-          //   color: "white",
-          //   opacity: 0,
-          //   transition: "opacity 0.3s ease",
-          //   "&:hover": {
-          //     opacity: 1,
-          //   },
-          // }}
-          ></CardContent>
+          <CardContent
+            className="custom-card-content"
+            sx={{
+              position: "absolute",
+              top: 0,
+              left: 0,
+              height: "100%",
+              width: "90%",
+              backgroundColor: "rgba(0, 0, 0, 0.7)",
+              overflowY: "auto",
+              color: "white",
+              opacity: 100,
+            }}
+          >
+            <Typography
+              className="custom-card-title"
+              gutterBottom
+              variant="h5"
+              component="div"
+            >
+              {cardName}
+            </Typography>
+            <Typography
+              className="custom-card-answer"
+              variant="body2"
+              color="inherit"
+            >
+              {theAnswer}
+            </Typography>
+          </CardContent>
         }
       </CardActionArea>
     </Card>

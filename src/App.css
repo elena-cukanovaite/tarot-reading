@@ -1,4 +1,15 @@
-
+.app-background {
+  background-color: #ffffff;
+  background-image: url('../public/tarot_images/back_of_card.jpg'); /* Path to your image */
+  background-repeat: repeat;
+}
+/* 
+.custom-button{
+  color: #ffffff !important;
+  background-color: #000000 !important;
+  opacity: 100 !important
+} */
+/* 
 .App {
   text-align: center;
 }
@@ -36,4 +47,5 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
+

@@ -7,21 +7,23 @@ import OneCard from "./OneCard";
 import ThreeCard from "./ThreeCard";
 import CelticCross from "./CelticCross";
 
+const button_sx = { color: '#ffffff', backgroundColor: '#3f6e8c', border: '3px dotted #e3d4b5', width:"100px"}
+
 const buttons = [
-  <Button key="one" component={Link} to="/">
+  <Button sx={button_sx} key="one" component={Link} to="/">
     One Card Reading
   </Button>,
-  <Button key="three" component={Link} to="/threecard">
+  <Button sx={button_sx} className="custom-button" key="three" component={Link} to="/threecard">
     Three Card Reading
   </Button>,
-  <Button key="celtic" component={Link} to="/celticcross">
+  <Button sx={button_sx} className="custom-button" key="celtic" component={Link} to="/celticcross">
     Celtic Cross Reading
   </Button>,
 ];
 
 function App() {
   return (
-    <>
+    <div className="app-background">
       <Router>
         <div>
           <center>
@@ -39,7 +41,7 @@ function App() {
           </Routes>
         </div>
       </Router>
-    </>
+    </div>
   );
 }
 

@@ -14,14 +14,14 @@
     width: 1px;
 } */
 
-/* .custom-card-title{
+.custom-card-title{
     overflow-y: auto;
-    width: 10%;
-    height: 40px;
-} */
+    /* width: 10%; */
+    /* height: 5vh; */
+}
 
-/* .custom-card-answer{
+.custom-card-answer{
     overflow-y: auto;
-    width: 10%;
-    height: 100px;
-} */
+    /* width: 10%; */
+    /* height: 15vh; */
+}
