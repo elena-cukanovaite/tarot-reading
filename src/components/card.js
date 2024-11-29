@@ -1,3 +1,4 @@
+import "./card.css";
 import React, { useState } from "react";
 import cardData from "../tarot_information.json";
 import Card from "@mui/material/Card";
@@ -16,11 +17,14 @@ let theAnswerUprightOrReversed = ["upright", "reverse"];
 
 const ActionAreaCard = ({
   placeholderDescription,
-  widthInput = "300px"
+  placeholderTitle,
+  widthInput = "300px",
+  componentRotationInput = "0",
 }) => {
-  console.log(placeholderDescription);
   let imagesPath = "./tarot_images/";
   let imagesFileType = ".jpg";
+  let componentRotation = "rotate(" + componentRotationInput + "deg)";
+
   const [imagePath, setImagePath] = useState(
     imagesPath + "back_of_card" + imagesFileType
   );
@@ -28,7 +32,7 @@ const ActionAreaCard = ({
     transform: "rotate(0deg)",
     width: widthInput,
   });
-  const [cardName, setCardName] = useState("");
+  const [cardName, setCardName] = useState(placeholderTitle);
   const [theAnswer, setTheAnswer] = useState(placeholderDescription);
 
   const selectCard = () => {
@@ -46,34 +50,36 @@ const ActionAreaCard = ({
   };
 
   return (
-    <Card onClick={selectCard} sx={{ maxWidth: widthInput }}>
+    <Card className='custom-card'
+      onClick={selectCard}
+      // sx={{ maxWidth: widthInput, transform: componentRotation }}
+    >
       <CardActionArea>
-        <CardMedia component="img" image={imagePath} sx={reversed} />
+        <Typography className='custom-card-title' gutterBottom variant="h5" component="div">
+          {cardName}
+        </Typography>
+        <Typography className='custom-card-answer' variant="body2" color="inherit">
+          {theAnswer}
+        </Typography>
+        <CardMedia className='custom-card-media' component="img" image={imagePath} sx={reversed} />
         {
-          <CardContent
-            sx={{
-              position: "absolute",
-              top: 0,
-              left: 0,
-              height: "100%",
-              width: "90%",
-              backgroundColor: "rgba(0, 0, 0, 0.7)",
-              overflowY: "auto",
-              color: "white",
-              opacity: 0,
-              transition: "opacity 0.3s ease",
-              "&:hover": {
-                opacity: 1,
-              },
-            }}
-          >
-            <Typography gutterBottom variant="h5" component="div">
-              {cardName}
-            </Typography>
-            <Typography variant="body2" color="inherit">
-              {theAnswer}
-            </Typography>
-          </CardContent>
+          <CardContent className="custom-card-content"
+          // sx={{
+          //   position: "absolute",
+          //   top: 0,
+          //   left: 0,
+          //   height: "100%",
+          //   width: "90%",
+          //   backgroundColor: "rgba(0, 0, 0, 0.7)",
+          //   overflowY: "auto",
+          //   color: "white",
+          //   opacity: 0,
+          //   transition: "opacity 0.3s ease",
+          //   "&:hover": {
+          //     opacity: 1,
+          //   },
+          // }}
+          ></CardContent>
         }
       </CardActionArea>
     </Card>

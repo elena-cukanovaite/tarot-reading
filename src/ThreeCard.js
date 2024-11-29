@@ -15,10 +15,7 @@ const ThreeCard = () => {
               <Typography gutterBottom variant="h2" component="div">
                 Three Card Reading
               </Typography>
-              <Typography
-                variant="body2"
-                sx={{ color: "text.secondary" }}
-              >
+              <Typography variant="body2" sx={{ color: "text.secondary" }}>
                 A Three-Card Tarot Spread is a simple yet powerful method for
                 gaining insight into a situation. Each card represents a
                 different aspect of time — Past, Present, and Future — and how
@@ -44,40 +41,66 @@ const ThreeCard = () => {
         </Box>
         <br></br>
         <Box>
-          <Grid item container direction="row" spacing={1} justifyContent="center"  alignItems="stretch" sx={{
+          <Grid
+            item
+            container
+            direction="row"
+            spacing={1}
+            justifyContent="center"
+            alignItems="stretch"
+            sx={{
               flexWrap: "nowrap", // Prevents items from wrapping
-            }}>
-            <Grid item xs={4} sx={{
+            }}
+          >
+            <Grid
+              item
+              xs={4}
+              sx={{
                 minWidth: "33.33vw", // Each card will take up 33.33% of the viewport width
-              }}>
+              }}
+            >
               <Typography variant="h4" gutterBottom>
                 The past
               </Typography>
-              <ActionAreaCard placeholderDescription="This card represents the past. 
+              <ActionAreaCard
+                placeholderDescription="This card represents the past. 
               Click the button once you are ready to find out how the past is affecting 
-              the situation you are questioning." />
+              the situation you are questioning."
+              />
             </Grid>
 
-            <Grid item xs={4} sx={{
+            <Grid
+              item
+              xs={4}
+              sx={{
                 minWidth: "33.33vw", // Each card will take up 33.33% of the viewport width
-              }}>
+              }}
+            >
               <Typography variant="h4" gutterBottom>
                 The present
               </Typography>
-              <ActionAreaCard placeholderDescription="This card represents the present. 
+              <ActionAreaCard
+                placeholderDescription="This card represents the present. 
               Click the button once you are ready to find out how the present state of 
-              the situation you are questioning." />
+              the situation you are questioning."
+              />
             </Grid>
 
-            <Grid item xs={4} sx={{
+            <Grid
+              item
+              xs={4}
+              sx={{
                 minWidth: "33.33vw", // Each card will take up 33.33% of the viewport width
-              }}>
+              }}
+            >
               <Typography variant="h4" gutterBottom>
                 The future
               </Typography>
-              <ActionAreaCard placeholderDescription="This card represents the future. 
+              <ActionAreaCard
+                placeholderDescription="This card represents the future. 
               Click the button once you are ready to find out what the future holds for 
-              you." />
+              you."
+              />
             </Grid>
           </Grid>
         </Box>

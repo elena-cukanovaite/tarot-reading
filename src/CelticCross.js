@@ -5,13 +5,13 @@ import ActionAreaCard from "./components/card";
 import Typography from "@mui/material/Typography";
 import Paper from "@mui/material/Paper";
 
-let widthInput = 200;
+let widthInput = 300;
 
 const CelticCross = () => {
   return (
     <>
       <center>
-        <Box sx={{ width: "100%" }}>
+        <Box>
           <Grid container justifyContent="center">
             <Paper elevation={0}>
               <Typography gutterBottom variant="h2" component="div">
@@ -19,7 +19,6 @@ const CelticCross = () => {
               </Typography>
               <Typography
                 variant="body2"
-                width="900px"
                 sx={{ color: "text.secondary" }}
               ></Typography>
             </Paper>
@@ -27,7 +26,7 @@ const CelticCross = () => {
         </Box>
         <br></br>
 
-        <Box sx={{ width: "100%" }}>
+        <Box>
           <Grid item container spacing={2} justifyContent="center">
             <Grid
               item
@@ -38,7 +37,7 @@ const CelticCross = () => {
             >
               <Grid item>
                 <Typography variant="h7" gutterBottom>
-                  5 - Past influences which are fading away
+                  5
                 </Typography>
                 <ActionAreaCard
                   placeholderDescription=""
@@ -56,7 +55,7 @@ const CelticCross = () => {
               >
                 <Grid item>
                   <Typography variant="h7" gutterBottom>
-                    3 - What you known
+                    3
                   </Typography>
                   <ActionAreaCard
                     placeholderDescription=""
@@ -71,10 +70,11 @@ const CelticCross = () => {
                   direction="column"
                   justifyContent="left"
                   display="flex"
+                  width={500}
                 >
                   <Grid item>
                     <Typography variant="h7" gutterBottom>
-                      1 - You
+                      1
                     </Typography>
                     <ActionAreaCard
                       placeholderDescription=""
@@ -84,12 +84,12 @@ const CelticCross = () => {
 
                   <Grid item>
                     <Typography variant="h7" gutterBottom>
-                      2 - Obstacles facing you
+                      2
                     </Typography>
                     <ActionAreaCard
                       placeholderDescription=""
                       widthInput={widthInput}
-                      //rotateCardComponent={90}
+                      componentRotationInput={90}
                     />
                   </Grid>
                 </Grid>
@@ -101,7 +101,6 @@ const CelticCross = () => {
                   <ActionAreaCard
                     placeholderDescription=""
                     widthInput={widthInput}
-                    showHeader={"Emergence"}
                   />
                 </Grid>
               </Grid>
@@ -126,7 +125,7 @@ const CelticCross = () => {
             >
               <Grid item>
                 <Typography variant="h7" gutterBottom>
-                  10 - What will come
+                  10
                 </Typography>
                 <ActionAreaCard
                   placeholderDescription=""
@@ -136,7 +135,7 @@ const CelticCross = () => {
 
               <Grid item>
                 <Typography variant="h7" gutterBottom>
-                  9 - What you want and fear
+                  9
                 </Typography>
                 <ActionAreaCard
                   placeholderDescription=""
@@ -146,7 +145,7 @@ const CelticCross = () => {
 
               <Grid item>
                 <Typography variant="h7" gutterBottom>
-                  8 - The circumstances surrounding your situation
+                  8
                 </Typography>
                 <ActionAreaCard
                   placeholderDescription=""
@@ -156,7 +155,7 @@ const CelticCross = () => {
 
               <Grid item>
                 <Typography variant="h7" gutterBottom>
-                  7 - Your current state of mind
+                  7
                 </Typography>
                 <ActionAreaCard
                   placeholderDescription=""
