@@ -52,7 +52,7 @@ const ActionAreaCard = ({
   return (
     <Card className='custom-card'
       onClick={selectCard}
-      // sx={{ maxWidth: widthInput, transform: componentRotation }}
+      sx={{ maxWidth: widthInput, transform: componentRotation }}
     >
       <CardActionArea>
         <Typography className='custom-card-title' gutterBottom variant="h5" component="div">
