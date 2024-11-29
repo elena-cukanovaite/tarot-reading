@@ -23,7 +23,7 @@ const buttons = [
 
 function App() {
   return (
-    <div className="app-background">
+    <>
       <Router>
         <div>
           <center>
@@ -41,7 +41,7 @@ function App() {
           </Routes>
         </div>
       </Router>
-    </div>
+    </>
   );
 }
 
