@@ -5,17 +5,19 @@ import ActionAreaCard from "./components/card";
 import Typography from "@mui/material/Typography";
 import Paper from "@mui/material/Paper";
 
+const sx = { color: '#ffffff', backgroundColor: '#3f6e8c', border: '3px dotted #e3d4b5'}
+
 const ThreeCard = () => {
   return (
     <>
       <center>
         <Box>
           <Grid container justifyContent="center">
-            <Paper elevation={0}>
+            <Paper sx={sx} elevation={0}>
               <Typography gutterBottom variant="h2" component="div">
                 Three Card Reading
               </Typography>
-              <Typography variant="body2" sx={{ color: "text.secondary" }}>
+              <Typography variant="body2">
                 A Three-Card Tarot Spread is a simple yet powerful method for
                 gaining insight into a situation. Each card represents a
                 different aspect of time — Past, Present, and Future — and how
@@ -59,7 +61,7 @@ const ThreeCard = () => {
                 minWidth: "33.33vw", // Each card will take up 33.33% of the viewport width
               }}
             >
-              <Typography variant="h4" gutterBottom>
+              <Typography variant="h4" sx={sx} gutterBottom>
                 The past
               </Typography>
               <ActionAreaCard
@@ -76,7 +78,7 @@ const ThreeCard = () => {
                 minWidth: "33.33vw", // Each card will take up 33.33% of the viewport width
               }}
             >
-              <Typography variant="h4" gutterBottom>
+              <Typography variant="h4" sx={sx} gutterBottom>
                 The present
               </Typography>
               <ActionAreaCard
@@ -93,7 +95,7 @@ const ThreeCard = () => {
                 minWidth: "33.33vw", // Each card will take up 33.33% of the viewport width
               }}
             >
-              <Typography variant="h4" gutterBottom>
+              <Typography variant="h4" sx={sx} gutterBottom>
                 The future
               </Typography>
               <ActionAreaCard
