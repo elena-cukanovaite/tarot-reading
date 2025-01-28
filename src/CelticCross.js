@@ -54,7 +54,7 @@ const CelticCross = () => {
                     feelings, desires, or fears.
                   </li>
                   <li>
-                    <b>7. Advice/Approach:</b> Suggests the best way to handle
+                    <b>7. Advice:</b> Suggests the best way to handle
                     the situation.
                   </li>
                   <li>
@@ -99,7 +99,7 @@ const CelticCross = () => {
                 </Typography>
 
                 <ActionAreaCard
-                  placeholderDescription=""
+                  placeholderDescription="Shows what you hope to achieve or are actively working toward."
                   widthInput={widthInput}
                 />
               </Grid>
@@ -121,7 +121,7 @@ const CelticCross = () => {
                     3. Past Influence
                   </Typography>
                   <ActionAreaCard
-                    placeholderDescription=""
+                    placeholderDescription="Highlights past events shaping the situation."
                     widthInput={widthInput}
                   />
                 </Grid>
@@ -144,7 +144,7 @@ const CelticCross = () => {
                       1. Present Position
                     </Typography>
                     <ActionAreaCard
-                      placeholderDescription=""
+                      placeholderDescription="Represents your current situation or focus."
                       widthInput={widthInput}
                     />
                   </Grid>
@@ -158,7 +158,7 @@ const CelticCross = () => {
                       2. Challenge
                     </Typography>
                     <ActionAreaCard
-                      placeholderDescription=""
+                      placeholderDescription="Indicates obstacles or what’s crossing you."
                       widthInput={widthInput}
                     />
                   </Grid>
@@ -173,7 +173,7 @@ const CelticCross = () => {
                     6. Subconscious Influence
                   </Typography>
                   <ActionAreaCard
-                    placeholderDescription=""
+                    placeholderDescription="Reveals underlying feelings, desires, or fears."
                     widthInput={widthInput}
                   />
                 </Grid>
@@ -187,7 +187,7 @@ const CelticCross = () => {
                   4. Future Influence
                 </Typography>
                 <ActionAreaCard
-                  placeholderDescription=""
+                  placeholderDescription="Suggests upcoming influences or events."
                   widthInput={widthInput}
                   showHeader={"Basis"}
                 />
@@ -210,13 +210,13 @@ const CelticCross = () => {
                   10. Outcome
                 </Typography>
                 <ActionAreaCard
-                  placeholderDescription=""
+                  placeholderDescription="Provides a possible result based on current energies and actions."
                   widthInput={widthInput}
                 />
               </Grid>
 
               <Grid item>
-              <Typography
+                <Typography
                   sx={{ ...sx, maxWidth: widthInput }}
                   variant="h4"
                   gutterBottom
@@ -224,13 +224,13 @@ const CelticCross = () => {
                   9. Hopes and Fears
                 </Typography>
                 <ActionAreaCard
-                  placeholderDescription=""
+                  placeholderDescription="Indicates your aspirations or anxieties related to the situation."
                   widthInput={widthInput}
                 />
               </Grid>
 
               <Grid item>
-              <Typography
+                <Typography
                   sx={{ ...sx, maxWidth: widthInput }}
                   variant="h4"
                   gutterBottom
@@ -238,21 +238,21 @@ const CelticCross = () => {
                   8. External Environment
                 </Typography>
                 <ActionAreaCard
-                  placeholderDescription=""
+                  placeholderDescription="Reflects how others or external factors affect you."
                   widthInput={widthInput}
                 />
               </Grid>
 
               <Grid item>
-              <Typography
+                <Typography
                   sx={{ ...sx, maxWidth: widthInput }}
                   variant="h4"
                   gutterBottom
                 >
-                  7. Advice/Approach
+                  7. Advice
                 </Typography>
                 <ActionAreaCard
-                  placeholderDescription=""
+                  placeholderDescription="Suggests the best way to handle the situation."
                   widthInput={widthInput}
                 />
               </Grid>
