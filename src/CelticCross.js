@@ -30,44 +30,44 @@ const CelticCross = () => {
                 <br></br>
                 <ul style={{ listStyleType: "none", padding: 0, margin: 0 }}>
                   <li>
-                    <b>Present Position:</b> Represents your current situation
-                    or focus.
+                    <b>1. Present Position:</b> Represents your current
+                    situation or focus.
                   </li>
                   <li>
-                    <b>Challenge:</b> Indicates obstacles or what’s crossing
+                    <b>2. Challenge:</b> Indicates obstacles or what’s crossing
                     you.
                   </li>
                   <li>
-                    <b>Past Influence:</b> Highlights past events shaping the
+                    <b>3. Past Influence:</b> Highlights past events shaping the
                     situation.
                   </li>
                   <li>
-                    <b>Future Influence:</b> Suggests upcoming influences or
+                    <b>4. Future Influence:</b> Suggests upcoming influences or
                     events.
                   </li>
                   <li>
-                    <b>Conscious Goal:</b> Shows what you hope to achieve or are
-                    actively working toward.
+                    <b>5. Conscious Goal:</b> Shows what you hope to achieve or
+                    are actively working toward.
                   </li>
                   <li>
-                    <b>Subconscious Influence:</b> Reveals underlying feelings,
-                    desires, or fears.
+                    <b>6. Subconscious Influence:</b> Reveals underlying
+                    feelings, desires, or fears.
                   </li>
                   <li>
-                    <b>Advice/Approach:</b> Suggests the best way to handle the
-                    situation.
+                    <b>7. Advice/Approach:</b> Suggests the best way to handle
+                    the situation.
                   </li>
                   <li>
-                    <b>External Environment:</b> Reflects how others or external
-                    factors affect you.
+                    <b>8. External Environment:</b> Reflects how others or
+                    external factors affect you.
                   </li>
                   <li>
-                    <b>Hopes and Fears:</b> Indicates your aspirations or
+                    <b>9. Hopes and Fears:</b> Indicates your aspirations or
                     anxieties related to the situation.
                   </li>
                   <li>
-                    <b>Outcome:</b> Provides a possible result based on current
-                    energies and actions.
+                    <b>10. Outcome:</b> Provides a possible result based on
+                    current energies and actions.
                   </li>
                 </ul>
                 <br></br>
@@ -90,9 +90,14 @@ const CelticCross = () => {
               justifyContent="left"
             >
               <Grid item>
-                <Typography variant="h7" gutterBottom>
-                  5
+                <Typography
+                  sx={{ ...sx, maxWidth: widthInput }}
+                  variant="h4"
+                  gutterBottom
+                >
+                  5. Conscious Goal
                 </Typography>
+
                 <ActionAreaCard
                   placeholderDescription=""
                   widthInput={widthInput}
@@ -108,8 +113,12 @@ const CelticCross = () => {
                 alignItems="center"
               >
                 <Grid item>
-                  <Typography variant="h7" gutterBottom>
-                    3
+                  <Typography
+                    sx={{ ...sx, maxWidth: widthInput }}
+                    variant="h4"
+                    gutterBottom
+                  >
+                    3. Past Influence
                   </Typography>
                   <ActionAreaCard
                     placeholderDescription=""
@@ -127,8 +136,12 @@ const CelticCross = () => {
                   width={500}
                 >
                   <Grid item>
-                    <Typography variant="h7" gutterBottom>
-                      1
+                    <Typography
+                      sx={{ ...sx, maxWidth: widthInput }}
+                      variant="h4"
+                      gutterBottom
+                    >
+                      1. Present Position
                     </Typography>
                     <ActionAreaCard
                       placeholderDescription=""
@@ -137,20 +150,27 @@ const CelticCross = () => {
                   </Grid>
 
                   <Grid item>
-                    <Typography variant="h7" gutterBottom>
-                      2
+                    <Typography
+                      sx={{ ...sx, maxWidth: widthInput }}
+                      variant="h4"
+                      gutterBottom
+                    >
+                      2. Challenge
                     </Typography>
                     <ActionAreaCard
                       placeholderDescription=""
                       widthInput={widthInput}
-                      componentRotationInput={90}
                     />
                   </Grid>
                 </Grid>
 
                 <Grid item>
-                  <Typography variant="h7" gutterBottom>
-                    6
+                  <Typography
+                    sx={{ ...sx, maxWidth: widthInput }}
+                    variant="h4"
+                    gutterBottom
+                  >
+                    6. Subconscious Influence
                   </Typography>
                   <ActionAreaCard
                     placeholderDescription=""
@@ -159,8 +179,12 @@ const CelticCross = () => {
                 </Grid>
               </Grid>
               <Grid item>
-                <Typography variant="h7" gutterBottom>
-                  4
+                <Typography
+                  sx={{ ...sx, maxWidth: widthInput }}
+                  variant="h4"
+                  gutterBottom
+                >
+                  4. Future Influence
                 </Typography>
                 <ActionAreaCard
                   placeholderDescription=""
@@ -178,8 +202,12 @@ const CelticCross = () => {
               justifyContent="left"
             >
               <Grid item>
-                <Typography variant="h7" gutterBottom>
-                  10
+                <Typography
+                  sx={{ ...sx, maxWidth: widthInput }}
+                  variant="h4"
+                  gutterBottom
+                >
+                  10. Outcome
                 </Typography>
                 <ActionAreaCard
                   placeholderDescription=""
@@ -188,8 +216,12 @@ const CelticCross = () => {
               </Grid>
 
               <Grid item>
-                <Typography variant="h7" gutterBottom>
-                  9
+              <Typography
+                  sx={{ ...sx, maxWidth: widthInput }}
+                  variant="h4"
+                  gutterBottom
+                >
+                  9. Hopes and Fears
                 </Typography>
                 <ActionAreaCard
                   placeholderDescription=""
@@ -198,8 +230,12 @@ const CelticCross = () => {
               </Grid>
 
               <Grid item>
-                <Typography variant="h7" gutterBottom>
-                  8
+              <Typography
+                  sx={{ ...sx, maxWidth: widthInput }}
+                  variant="h4"
+                  gutterBottom
+                >
+                  8. External Environment
                 </Typography>
                 <ActionAreaCard
                   placeholderDescription=""
@@ -208,8 +244,12 @@ const CelticCross = () => {
               </Grid>
 
               <Grid item>
-                <Typography variant="h7" gutterBottom>
-                  7
+              <Typography
+                  sx={{ ...sx, maxWidth: widthInput }}
+                  variant="h4"
+                  gutterBottom
+                >
+                  7. Advice/Approach
                 </Typography>
                 <ActionAreaCard
                   placeholderDescription=""
